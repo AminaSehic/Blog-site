@@ -28,15 +28,13 @@ namespace BlogApiRubicon.Controllers
         [HttpGet]
         public async Task<ActionResult<MultipleBlogPostsResponse>> GetBlogs()
         {
-            string tag = Request.Query["tag"].ToString();
+            string tag = Request.Query["tag"];
             List<Blog> blogs = new List<Blog>();
             if (tag.Length != 0)
             {
-                await _context.Blog
+              blogs =  await _context.Blog
                      .Include("Tags")
-                     .Where(blog => blog.Tags
-                         .Select(t => t.Name)
-                         .Contains(tag))
+                     .Where(blog => blog.Tags.Select(t => t.Name).Contains(tag))
                      .ToListAsync();
             }
             else

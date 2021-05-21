@@ -55,3 +55,4 @@ C:\Users\Lenovo\Desktop\BlogApiRubicon\BlogApiRubicon\obj\Release\net5.0\BlogApi
 C:\Users\Lenovo\Desktop\BlogApiRubicon\BlogApiRubicon\obj\Release\net5.0\ref\BlogApiRubicon.dll
 C:\Users\Lenovo\Desktop\BlogApiRubicon\BlogApiRubicon\obj\Release\net5.0\BlogApiRubicon.pdb
 C:\Users\Lenovo\Desktop\BlogApiRubicon\BlogApiRubicon\obj\Release\net5.0\BlogApiRubicon.genruntimeconfig.cache
+C:\Users\Lenovo\Desktop\BlogApiRubicon\BlogApiRubicon\obj\Release\net5.0\BlogApiRubicon.csprojAssemblyReference.cache
