@@ -28,7 +28,7 @@ namespace BlogApiRubicon.Controllers
         [HttpGet]
         public async Task<ActionResult<MultipleBlogPostsResponse>> GetBlogs()
         {
-            string tag = Request.Query["tag"];
+            string tag = Request.Query["tag"].ToString();
             List<Blog> blogs = new List<Blog>();
             if (tag.Length != 0)
             {
@@ -153,7 +153,7 @@ namespace BlogApiRubicon.Controllers
             {
                 return NotFound(new ClientErrorResponse(e.Message));
             }
-            return blog;
+            return NoContent();
         }
     }
 }
